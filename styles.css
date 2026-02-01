@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    width: 320px;
+    padding: 20px;
+    background: linear-gradient(145deg, #bebebe, #d4d4d4);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(145deg, #f5f5f5, #ffffff);
+    color: #333;
+    text-align: right;
+    font-size: 32px;
+    font-weight: bold;
+    border: 3px solid #666;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.number {
+    background: linear-gradient(145deg, #e8e8e8, #ffffff);
+    color: #333;
+    border: 2px solid #999;
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.2),
+        inset 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.number:hover {
+    background: linear-gradient(145deg, #f0f0f0, #f8f8f8);
+}
+
+.number:active {
+    box-shadow: 
+        0 2px 3px rgba(0, 0, 0, 0.2),
+        inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+.operator {
+    background: linear-gradient(145deg, #3a3a3a, #4a4a4a);
+    color: white;
+    border: 2px solid #2a2a2a;
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.3),
+        inset 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.operator:hover {
+    background: linear-gradient(145deg, #4a4a4a, #5a5a5a);
+}
+
+.operator:active {
+    box-shadow: 
+        0 2px 3px rgba(0, 0, 0, 0.3),
+        inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
+
+.all-clear {
+    background: linear-gradient(145deg, #c41e1e, #e63939);
+    color: white;
+    border: 2px solid #a01818;
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.3),
+        inset 0 1px 2px rgba(255, 255, 255, 0.3);
+    font-size: 28px;
+}
+
+.all-clear:hover {
+    background: linear-gradient(145deg, #d42828, #f04444);
+}
+
+.all-clear:active {
+    box-shadow: 
+        0 2px 3px rgba(0, 0, 0, 0.3),
+        inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
+
+.equal-sign {
+    background: linear-gradient(145deg, #3a3a3a, #4a4a4a);
+    color: white;
+    border: 2px solid #2a2a2a;
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.3),
+        inset 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.equal-sign:hover {
+    background: linear-gradient(145deg, #4a4a4a, #5a5a5a);
+}
+
+.equal-sign:active {
+    box-shadow: 
+        0 2px 3px rgba(0, 0, 0, 0.3),
+        inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
